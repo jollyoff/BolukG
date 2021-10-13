@@ -9,7 +9,7 @@ namespace SingletonPattern
         private Singleton()
         {
             Console.WriteLine($"Singleton ctor {DateTime.Now}");
-            Date = DateTime.Now.TimeOfDay.ToString();
+            Date = DateTime.Now.ToString();
         }
 
         public static Singleton GetInstance()
